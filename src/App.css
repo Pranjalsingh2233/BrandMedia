@@ -1,0 +1,7 @@
+body{
+    background-color: #fff;
+    color: #000;
+    box-sizing: border-box  ;
+    font-size: 1rem;
+    overflow-x: hidden;
+}
