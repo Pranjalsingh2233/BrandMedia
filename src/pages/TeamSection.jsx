@@ -1,11 +1,16 @@
 import React from "react";
 import Team from "../components/Team";
 import SeoSection from "../components/SeoSection";
+import Seo from "../components/Seo";
 
 export default function TeamSection() {
   return (
     <>
-      <div className="container p-md-3 mb-5 mb-md-0">
+      <Seo
+        title="About Us"
+        description="Learn more about YourBrand, a digital marketing company in India."
+      />
+      <div className="container p-md-3 mb-5 mb-md-0 fix-top">
         <div className="row p-md-5 pt-5">
           <div className="col-lg-8">
             <h1 className="mb-5">

@@ -12,6 +12,10 @@
     color: #387ed1;
 }
 
+.fix-top {
+    padding-top: 70px !important;
+}
+
 /* Footer */
 .footer {
     display: flex;
@@ -253,5 +257,11 @@ a {
 @media (max-width: 421px) {
     .footer {
         gap: 1rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .dis-hide{
+        display: none;
     }
 }

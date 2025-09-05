@@ -3,11 +3,16 @@ import SeoSection from "../components/SeoSection";
 import ReviewCard from "../components/ReviewCard";
 import Team from "../components/Team";
 import Skills from "../components/Skills";
+import Seo from "../components/Seo";
 
 export default function About() {
   return (
     <>
-      <div className="container mb-5 p-md-3 pt-5">
+      <Seo
+        title="About Us"
+        description="Learn more about YourBrand, a digital marketing company in India."
+      />
+      <div className="container mb-5 p-md-3 pt-5 fix-top">
         <div className="row p-md-5">
           <div className="col-lg-6 mt-lg-5">
             <h1>

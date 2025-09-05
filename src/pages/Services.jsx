@@ -3,11 +3,16 @@ import Skills from "../components/Skills";
 import ReviewCard from "../components/ReviewCard";
 import SeoSection from "../components/SeoSection";
 import Card from "../components/Card";
+import Seo from "../components/Seo";
 
 export default function Services() {
   return (
     <>
-      <div className="container p-md-3 mb-5">
+      <Seo
+        title="About Us"
+        description="Learn more about YourBrand, a digital marketing company in India."
+      />
+      <div className="container p-md-3 mb-5 fix-top">
         <div className="row p-md-5 pt-5">
           <h1>
             Elevate. Engage. Excel.

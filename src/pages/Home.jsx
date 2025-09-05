@@ -3,11 +3,16 @@ import { Link } from "react-router-dom";
 import SeoSection from "../components/SeoSection";
 import ContactForm from "../components/ContactForm";
 import ReviewCard from "../components/ReviewCard";
+import Seo from "../components/Seo";
 
 export default function Home() {
   return (
     <>
-      <div className="container-fluid wrapper pt-5 p-lg-3">
+      <Seo
+        title="Best Digital Marketing Company in India"
+        description="We help brands grow online with SEO, PPC, and social media marketing."
+      />
+      <div className="container-fluid wrapper pt-5 p-lg-3 fix-top">
         <div className="row p-lg-5 flex-wrap-reverse">
           <div className="col-lg-6 p-xl-5 text-white pb-5 text-center text-lg-start">
             <h1>
