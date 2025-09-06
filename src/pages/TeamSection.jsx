@@ -38,11 +38,14 @@ export default function TeamSection() {
               promise — it’s a practice.
             </p>
           </div>
-          <div className="col-lg-4">
+          <div className="col-lg-4 ">
             <img
               src="/raamin-ka-uR51HXLO7G0-unsplash.jpg"
               alt="owner"
               className="img-fluid social"
+              width={600}
+              height={300}
+              fetchpriority="high"
             ></img>
             <div className="text-center fs-3 mt-2">Afridi Khan</div>
           </div>

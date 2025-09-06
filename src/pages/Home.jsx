@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import SeoSection from "../components/SeoSection";
 import ContactForm from "../components/ContactForm";
@@ -28,23 +28,29 @@ export default function Home() {
               Start Ranking Now
             </Link>
           </div>
-          <div className="col-lg-6">
+          <div className="col-lg-6 text-center text-lg-start">
             <img
               src="/antar-ray-uVo-oNHyTTc-unsplash.png"
               alt="social"
               className="img-fluid mb-5"
+              width={600}
+              height={300}
+              fetchpriority="high"
             ></img>
           </div>
         </div>
       </div>
-      <div className="container p-md-5 mt-5 mb-5">
+      <div className={`container p-md-5 mt-5 mb-5 `}>
         <h2 className="mb-3 text-center">Your Growth Partner</h2>
         <div className="row align-items-center">
-          <div className="col-lg-6 p-md-5 text-muted">
+          <div className="col-lg-6 p-md-5 text-muted text-center text-lg-start">
             <img
               className="social img-fluid"
               src="/luky-triohandoko-eecTcKqXpz8-unsplash.png"
               alt="work"
+              width={600}
+              height={300}
+              fetchpriority="high"
             />
           </div>
           <div className="col-lg-6 p-md-3 text-mute">
@@ -73,7 +79,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="container p-md-3">
+      <div className={`container p-md-3`}>
         <div className="row text-center p-md-3">
           <h2 className="mb-5 pb-3">What We Offer</h2>
           <br />
@@ -151,7 +157,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="container p-md-3 mb-5">
+      <div className={`container p-md-3 mb-5 `}>
         <div className="row p-md-5">
           <h2 className="text-center mb-5 pb-3">Why Businesses Trust Us</h2>
           <div className="col-lg-4 mb-3">

@@ -249,8 +249,8 @@ a {
 /* Responsive */
 @media (max-width: 500px) {
     .review-cards{
-        width: 320px;
-        height: 520px;
+        width: 320px !important;
+        height: 520px !important;
     }
 }
 

@@ -32,11 +32,14 @@ export default function About() {
               growth, and business opportunities to our clients.
             </p>
           </div>
-          <div className="col-lg-6 ">
+          <div className="col-lg-6 text-center text-lg-start">
             <img
               src="/luky-triohandoko-ugGd6GTRYcQ-unsplash.png"
               alt="team"
               className="img-fluid"
+              width={600}
+              height={300}
+              fetchpriority="high"
             ></img>
           </div>
         </div>
