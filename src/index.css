@@ -185,6 +185,21 @@ a {
     left: 0;
 }
 
+.stats-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: #387ed1;
+    font-size: 2rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+}
+
+.stats-wrapper h3 {
+    font-size: 4rem;
+}
+
 /* About */
 @property --val {
   syntax: '<percentage>';
@@ -272,5 +287,8 @@ a {
     }
     .card-content {
         opacity: 1 !important;
+    }
+    .stats-wrapper {
+        justify-content: center;
     }
 }

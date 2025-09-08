@@ -4,17 +4,69 @@ import SeoSection from "../components/SeoSection";
 import ContactForm from "../components/ContactForm";
 import ReviewCard from "../components/ReviewCard";
 import Seo from "../components/Seo";
+import { useInView } from "react-intersection-observer";
 
 export default function Home() {
+  const [stats, setStats] = useState([0, 0, 0]);
+  const { ref, inView } = useInView({
+    threshold: 0,
+    triggerOnce: true,
+  });
+
+  useEffect(() => {
+    if (!inView) return;
+    const interval = setInterval(() => {
+      setStats((prev) => {
+        const newStats = [...prev];
+        if (newStats[0] >= 100) {
+          clearInterval(interval);
+          return prev;
+        }
+        newStats[0] = newStats[0] + 1;
+        return newStats;
+      });
+    }, 30);
+
+    const interval2 = setInterval(() => {
+      setStats((prev) => {
+        const newStats = [...prev];
+        if (newStats[1] >= 10) {
+          clearInterval(interval2);
+          return prev;
+        }
+        newStats[1] = newStats[1] + 1;
+        return newStats;
+      });
+    }, 300);
+
+    const interval3 = setInterval(() => {
+      setStats((prev) => {
+        const newStats = [...prev];
+        if (newStats[2] >= 50) {
+          clearInterval(interval3);
+          return prev;
+        }
+        newStats[2] = newStats[2] + 1;
+        return newStats;
+      });
+    }, 60);
+
+    return () => {
+      clearInterval(interval);
+      clearInterval(interval2);
+      clearInterval(interval3);
+    };
+  }, [inView]);
+
   return (
     <>
       <Seo
         title="Best Digital Marketing Company in India"
         description="We help brands grow online with SEO, PPC, and social media marketing."
       />
-      <div className="container-fluid wrapper pt-5 p-lg-3 fix-top">
-        <div className="row p-lg-5 flex-wrap-reverse">
-          <div className="col-lg-6 p-xl-5 text-white pb-5 text-center text-lg-start">
+      <div className="container-fluid wrapper pt-5 p-lg-3 fix-top mb-5">
+        <div className="row p-lg-5 flex-wrap-reverse justify-content-between w-100">
+          <div className="col-lg-6 p-xxl-5 text-white pb-5 text-center text-lg-start">
             <h1>
               Partner with the Leading <br /> Branding & Digital Marketing
               <br />
@@ -28,7 +80,7 @@ export default function Home() {
               Start Ranking Now
             </Link>
           </div>
-          <div className="col-lg-6 text-center text-lg-start">
+          <div className="col-lg-6 col-xxl-auto text-center text-lg-start">
             <img
               src="/antar-ray-uVo-oNHyTTc-unsplash.png"
               alt="social"
@@ -40,46 +92,46 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className={`container p-md-5 mt-5 mb-5 `}>
-        <h2 className="mb-3 text-center">Your Growth Partner</h2>
-        <div className="row align-items-center">
-          <div className="col-lg-6 p-md-5 text-muted text-center text-lg-start">
-            <img
-              className="social img-fluid"
-              src="/luky-triohandoko-eecTcKqXpz8-unsplash.png"
-              alt="work"
-              width={600}
-              height={300}
-              fetchpriority="high"
-            />
-          </div>
-          <div className="col-lg-6 p-md-3 text-mute">
-            <p>
-              Brand Media Pvt. Ltd. is a full-service digital and IT solutions
-              company dedicated to helping businesses thrive in the online
-              space. From modern website design and seamless development to
-              performance-driven Google Ads, SEO, and digital marketing
-              campaigns, we deliver end-to-end solutions tailored to your goals.
+      <div className={`container p-md-3 `}>
+        <div className="row p-md-5">
+          <h2 className="text-center mb-3 mb-md-0">
+            The Power of <span className="text">Performance Marketing</span>
+          </h2>
+          <div className="col-lg-12 text-center p-md-5">
+            <p className="text-muted mb-5">
+              Every client, every campaign, and every success adds to our
+              journey of making brands shine in the digital space. With a
+              dedicated team and proven strategies, we’ve built trust, delivered
+              measurable results, and helped businesses grow.
             </p>
-            <p>
-              Our approach goes beyond just providing services — we focus on
-              building long-term partnerships with our clients. Every strategy
-              we create is backed by data, creativity, and innovation to ensure
-              measurable business growth. With a team of specialists in
-              technology, marketing, and design, Brand Media brings together
-              expertise that empowers your brand to stand out, attract the right
-              audience, and achieve sustainable success.
-            </p>
-            <div className="text-center text-lg-start">
-              <Link to="/about">
-                Learn More{" "}
-                <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
-              </Link>
+            <div className="stats-wrapper" ref={ref}>
+              <div>
+                <h3>
+                  {stats[2]}
+                  <sup>+</sup>
+                </h3>
+                <p>Satisfied Clients</p>
+              </div>
+              <div>
+                <h3>
+                  {stats[1]}
+                  <sup>+</sup>
+                </h3>
+                <p>Expert Member</p>
+              </div>
+              <div>
+                <h3>
+                  {stats[0]}
+                  <sup>+</sup>
+                </h3>
+                <p>Works Done</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div className={`container p-md-3`}>
+
+      <div className={`container p-md-3 mb-5`}>
         <div className="row text-center p-md-3">
           <h2 className="mb-5 pb-3">What We Offer</h2>
           <br />
@@ -157,51 +209,42 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className={`container p-md-3 mb-5 `}>
-        <div className="row p-md-5">
-          <h2 className="text-center mb-5 pb-3">Why Businesses Trust Us</h2>
-          <div className="col-lg-4 mb-3">
-            <h4 className="mb-5 text-muted">
-              {" "}
-              <i class="fa-solid fa-trophy"></i> Proven Results
-            </h4>
-            <p className="text">
-              Increased client ROI through data-driven strategies.
-            </p>
-            <p className="text">
-              Delivered higher rankings and visibility on Google.
-            </p>
-            <p className="text">
-              Helped businesses generate quality leads consistently.
-            </p>
+      <div className={`container p-md-5 mt-5 mb-5 `}>
+        <h2 className="mb-3 text-center">Your Growth Partner</h2>
+        <div className="row align-items-center">
+          <div className="col-lg-6 p-md-5 text-muted text-center text-lg-start">
+            <img
+              className="social img-fluid"
+              src="/luky-triohandoko-eecTcKqXpz8-unsplash.png"
+              alt="work"
+              width={600}
+              height={300}
+              fetchpriority="high"
+            />
           </div>
-          <div className="col-lg-4 mb-3">
-            <h4 className="mb-5 text-muted">
-              <i class="fa-solid fa-headset"></i> 24/7 Support
-            </h4>
-            <p className="text">
-              Always available through chat, email, or phone.{" "}
+          <div className="col-lg-6 p-md-3 text-mute">
+            <p>
+              Brand Media Pvt. Ltd. is a full-service digital and IT solutions
+              company dedicated to helping businesses thrive in the online
+              space. From modern website design and seamless development to
+              performance-driven Google Ads, SEO, and digital marketing
+              campaigns, we deliver end-to-end solutions tailored to your goals.
             </p>
-            <p className="text">
-              Quick response to technical or marketing queries.{" "}
+            <p>
+              Our approach goes beyond just providing services — we focus on
+              building long-term partnerships with our clients. Every strategy
+              we create is backed by data, creativity, and innovation to ensure
+              measurable business growth. With a team of specialists in
+              technology, marketing, and design, Brand Media brings together
+              expertise that empowers your brand to stand out, attract the right
+              audience, and achieve sustainable success.
             </p>
-            <p className="text">
-              Dedicated support team for hassle-free assistance.{" "}
-            </p>
-          </div>
-          <div className="col-lg-4">
-            <h4 className="mb-5 text-muted">
-              <i class="fa-solid fa-globe"></i> End-to-End Services
-            </h4>
-            <p className="text">
-              Website design, branding, and digital marketing in one place.{" "}
-            </p>
-            <p className="text">
-              Single point of contact for all digital needs.{" "}
-            </p>
-            <p className="text">
-              Consistency in brand message across all platforms.{" "}
-            </p>
+            <div className="text-center text-lg-start">
+              <Link to="/about">
+                Learn More{" "}
+                <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
