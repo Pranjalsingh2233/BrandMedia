@@ -79,9 +79,7 @@ a {
 }
 
 .custom-card {
-    height: 380px;
-    background-size: cover;
-    background-position:left;
+    height: 300px;
     width: 100%;
     padding: 1rem 2rem;
     position: relative;
@@ -89,19 +87,22 @@ a {
     box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
     border-radius: 14px;
     margin-bottom: 2rem;
+    transition: transform 1s ease;
 }
 
 .card-content{
-    background: rgba(0, 0, 0, 0.5);
     width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: #fff;
-    opacity: 0.8;
-    border-top-left-radius: 14px;
-    border-top-right-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    align-items: center;
+}
 
+.card-content i {
+    width: 70px;
+    height: 70px;
+    font-size: 1.75rem;
 }
 
 .card-btn {
@@ -114,12 +115,8 @@ a {
     border-bottom-right-radius: 14px;
 }
 
-.custom-card:hover .card-btn{
-    background-color: #387ed1 !important;
-}
-
-.custom-card:hover .card-content{
-    opacity: 1;
+.custom-card:hover{
+    transform: translateY(-20px);
 }
 
 .card-btn:focus {
@@ -236,14 +233,6 @@ a {
     align-items: center;
     gap: 1rem;
     color: #387ed1;
-}
-
-/* Services */
-.move-up {
-    transition: transform 1s ease;
-}
-.move-up:hover {
-    transform: translateY(-20px);
 }
 
 @keyframes slide {

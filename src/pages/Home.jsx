@@ -4,6 +4,7 @@ import SeoSection from "../components/SeoSection";
 import ContactForm from "../components/ContactForm";
 import ReviewCard from "../components/ReviewCard";
 import Seo from "../components/Seo";
+import Card from "../components/Card";
 import { useInView } from "react-intersection-observer";
 
 export default function Home() {
@@ -93,7 +94,7 @@ export default function Home() {
         </div>
       </div>
       <div className={`container p-md-3 `}>
-        <div className="row p-md-5">
+        <div className="row p-md-5 mb-5 mb-md-0">
           <h2 className="text-center mb-3 mb-md-0">
             The Power of <span className="text">Performance Marketing</span>
           </h2>
@@ -132,80 +133,51 @@ export default function Home() {
       </div>
 
       <div className={`container p-md-3 mb-5`}>
-        <div className="row text-center p-md-3">
-          <h2 className="mb-5 pb-3">What We Offer</h2>
-          <br />
-          <div className="col-lg-6 col-xl-4">
-            <div
-              className="custom-card"
-              style={{
-                backgroundImage: `url("/pexels-mikael-blomkvist-6476808.jpg")`,
-              }}
-            >
-              <div className="card-content">
-                <h5 className="">SEO and local Ads</h5>
-                <p className="">
-                  We understand the critical role that a well-designed and
-                  user-friendly website plays in shaping your online presence
-                  driving.
-                </p>
-              </div>
-              <Link
-                to="/services"
-                className="btn card-btn"
-                style={{ backgroundColor: "transparent" }}
-              >
-                More...
-              </Link>
-            </div>
+        <h2 className="mb-5 pb-3 text-center">What We Offer</h2>
+        <div className="row">
+          <div className="col-xl-4 col-md-6">
+            <Card
+              title="Search Engine Optimization (SEO)"
+              para="Boost your digital presence and attract the right audience with our smart SEO strategies. We fine-tune your website to secure higher rankings and long-term growth."
+              icon="fa-solid fa-bullseye"
+            />
           </div>
-          <div className="col-lg-6 col-xl-4">
-            <div
-              className="custom-card"
-              style={{
-                backgroundImage: `url("/carriza-maiquez-RTdvy9izXvw-unsplash.jpg")`,
-              }}
-            >
-              <div className="card-content">
-                <h5 className="">Website Development</h5>
-                <p className="">
-                  We understand the critical role that a well-designed and
-                  user-friendly website plays in shaping your online presence
-                  driving.
-                </p>
-              </div>
-              <Link
-                to="/services"
-                className="btn card-btn"
-                style={{ backgroundColor: "transparent" }}
-              >
-                More...
-              </Link>
-            </div>
+          <div className="col-xl-4 col-md-6">
+            {" "}
+            <Card
+              title="Social Engine Marketing"
+              para="Strengthen your brand identity and connect with your audience through impactful social media. Our tailored campaigns spark engagement and grow your community."
+              icon="fa-solid fa-flag"
+            />
           </div>
-          <div className="col-lg-6 col-xl-4">
-            <div
-              className="custom-card"
-              style={{
-                backgroundImage: `url("/myriam-jessier-eveI7MOcSmw-unsplash.jpg")`,
-              }}
-            >
-              <div className="card-content">
-                <h5 className="">Google Ads</h5>
-                <p className="">
-                  We understand the critical role that a well-designed and
-                  user-friendly website plays in shaping your online presence
-                  driving.
-                </p>
-              </div>
-              <Link
-                to="/services"
-                className="btn card-btn"
-                style={{ backgroundColor: "transparent" }}
-              >
-                More...
-              </Link>
-            </div>
+          <div className="col-xl-4 col-md-6">
+            <Card
+              title="Website Design and Development"
+              para="Create a powerful first impression with a sleek, user-friendly website. Our expert design and development services ensure a seamless experience that drives results."
+              icon="fa-solid fa-code"
+            />
+          </div>
+          <div className="col-xl-4 col-md-6">
+            {" "}
+            <Card
+              title="Social Media Optimization"
+              para="We create impactful content that informs, entertains, and inspires—keeping your audience engaged while strengthening brand loyalty."
+              icon="fa-solid fa-ranking-star"
+            />
+          </div>
+          <div className="col-xl-4 col-md-6">
+            <Card
+              title="Paid Advertising (PPC)"
+              para="Maximize your reach with targeted paid ads on Google, Facebook, and beyond. We design data-driven campaigns that deliver clicks, leads, and conversions efficiently."
+              icon="fa-solid fa-money-bill-trend-up"
+            />
+          </div>
+          <div className="col-xl-4 col-md-6">
+            <Card
+              title="Performance Tracking"
+              para="We monitor and analyze your digital campaigns with advanced analytics, giving you clear insights to optimize performance and maximize ROI."
+              icon="fa-solid fa-chart-pie"
+            />
           </div>
         </div>
       </div>

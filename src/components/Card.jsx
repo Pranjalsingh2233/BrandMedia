@@ -1,17 +1,15 @@
 import React from "react";
 
-export default function Card({ title, para, image }) {
+export default function Card({ title, para, icon }) {
   return (
     <>
-      <div
-        className="custom-card mt-5 move-up"
-        style={{
-          backgroundImage: image,
-        }}
-      >
+      <div className="custom-card mt-3 mt-md-5">
         <div className="card-content text-center">
-          <h5>{title}</h5>
-          <p>{para}</p>
+          <i className={`${icon} profile`}></i>
+          <div>
+            <h5>{title}</h5>
+            <p>{para}</p>
+          </div>
         </div>
       </div>
     </>
