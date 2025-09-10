@@ -38,7 +38,7 @@ export default function Team() {
             </p>
           </div>
         </div>
-        <div className="col-md-4">
+        <div className="col-md-4 col-sm-6">
           <div>
             <div className="d-flex justify-content-center mb-4">
               <img
@@ -52,6 +52,23 @@ export default function Team() {
               <b> Virendra Tiwari </b>
               <br />
               Gandu Gutka
+            </p>
+          </div>
+        </div>
+        <div className="col-md-4 col-sm-6 mt-3">
+          <div>
+            <div className="d-flex justify-content-center mb-4">
+              <img
+                src="/social.jpg"
+                alt="team"
+                className=" profile"
+                style={{ width: "12rem", height: "12rem" }}
+              ></img>
+            </div>{" "}
+            <p>
+              <b> Zeshan Jamal </b>
+              <br />
+              Video Editor
             </p>
           </div>
         </div>
