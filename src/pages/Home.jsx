@@ -19,14 +19,14 @@ export default function Home() {
     const interval = setInterval(() => {
       setStats((prev) => {
         const newStats = [...prev];
-        if (newStats[0] >= 100) {
+        if (newStats[0] >= 50) {
           clearInterval(interval);
           return prev;
         }
         newStats[0] = newStats[0] + 1;
         return newStats;
       });
-    }, 30);
+    }, 60);
 
     const interval2 = setInterval(() => {
       setStats((prev) => {
@@ -43,14 +43,14 @@ export default function Home() {
     const interval3 = setInterval(() => {
       setStats((prev) => {
         const newStats = [...prev];
-        if (newStats[2] >= 50) {
+        if (newStats[2] >= 30) {
           clearInterval(interval3);
           return prev;
         }
         newStats[2] = newStats[2] + 1;
         return newStats;
       });
-    }, 60);
+    }, 100);
 
     return () => {
       clearInterval(interval);
@@ -65,25 +65,28 @@ export default function Home() {
         title="Best Digital Marketing Company in India"
         description="We help brands grow online with SEO, PPC, and social media marketing."
       />
-      <div className="container-fluid wrapper pt-5 p-lg-3 fix-top mb-5">
-        <div className="row p-lg-5 flex-wrap-reverse justify-content-between w-100">
-          <div className="col-lg-6 p-xxl-5 text-white pb-5 text-center text-lg-start">
+      <div className="container-fluid gradient pt-5 p-lg-3 fix-top mb-5">
+        <div className="row p-lg-5 flex-wrap-reverse justify-content-between w-100 align-items-center">
+          <div
+            className="col-lg-6 p-xxl-5 text pb-5 text-center text-lg-start fix-top"
+            style={{ position: "relative", bottom: "3rem" }}
+          >
             <h1>
               Partner with the Leading <br /> Branding & Digital Marketing
               <br />
               Company in Uttar Pradesh
             </h1>
-            <p className="mb-4">
+            <p className="mb-4 text-muted">
               Website Development, Paid Ads & Digital Marketing that Deliver
               Results.
             </p>
-            <Link to="/contact" className="my-btn me-0 me-lg-5">
+            <Link to="/contact" className="btn me-0 me-lg-5">
               Start Ranking Now
             </Link>
           </div>
           <div className="col-lg-6 col-xxl-auto text-center text-lg-start">
             <img
-              src="/antar-ray-uVo-oNHyTTc-unsplash.png"
+              src="/hero1.png"
               alt="social"
               className="img-fluid mb-5"
               width={600}
@@ -186,11 +189,11 @@ export default function Home() {
         <div className="row align-items-center">
           <div className="col-lg-6 p-md-5 text-muted text-center text-lg-start">
             <img
-              className="social img-fluid"
-              src="/luky-triohandoko-eecTcKqXpz8-unsplash.png"
+              className="social img-flui"
+              src="/progress.png"
               alt="work"
-              width={600}
-              height={300}
+              width={300}
+              height={400}
               fetchpriority="high"
             />
           </div>

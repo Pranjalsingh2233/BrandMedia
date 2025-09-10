@@ -13,14 +13,18 @@ export default function Services() {
         description="Learn more about YourBrand, a digital marketing company in India."
       />
       <div className="container p-md-3 mb-5 fix-top">
-        <div className="row p-md-5 pt-5">
+        <div className="row p-md-5 pt-5" style={{ position: "relative" }}>
           <h1>
             Elevate. Engage. Excel.
             <br />
             <span style={{ color: "#387ed1" }}> With Brand Media</span>
           </h1>
           <p>Your trusted partner in digital growth</p>
-          <p className="mb-5">
+          <video autoPlay muted loop playsInline className="video">
+            <source src="/mike.mp4" type="video/mp4" />
+          </video>
+
+          <p className="mb-5 fix-width">
             At Brand Media, we know that a strong online presence isn’t
             optional—it’s essential. Our team helps your business shine with a
             complete suite of digital solutions. From boosting visibility

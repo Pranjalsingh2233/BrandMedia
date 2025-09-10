@@ -13,7 +13,7 @@ export default function About() {
         description="Learn more about YourBrand, a digital marketing company in India."
       />
       <div className="container mb-5 p-md-3 pt-5 fix-top">
-        <div className="row p-md-5">
+        <div className="row p-md-5  justify-content-between w-100 align-items-center">
           <div className="col-lg-6 mt-lg-5">
             <h1>
               We help brands grow with <br />
@@ -32,9 +32,9 @@ export default function About() {
               growth, and business opportunities to our clients.
             </p>
           </div>
-          <div className="col-lg-6 text-center text-lg-start">
+          <div className="col-lg-6 text-center text-lg-start p-5">
             <img
-              src="/luky-triohandoko-ugGd6GTRYcQ-unsplash.png"
+              src="/hero.png"
               alt="team"
               className="img-fluid"
               width={600}

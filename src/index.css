@@ -197,6 +197,13 @@ a {
     font-size: 4rem;
 }
 
+.gradient {
+    background:
+  radial-gradient(ellipse 60% 40% at top left, #387ed1 50%, transparent 41%),
+  radial-gradient(ellipse 60% 40% at bottom right, #387ed1 40%, transparent 41%);
+
+}
+
 /* About */
 @property --val {
   syntax: '<percentage>';
@@ -235,6 +242,19 @@ a {
     color: #387ed1;
 }
 
+.video {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.fix-width {
+    width: 70%;
+}
+
 @keyframes slide {
   from { transform: translateX(0); }
   to { transform: translateX(calc(-50% - 2rem)); }
@@ -264,6 +284,15 @@ a {
     }
 }
 
+@media (max-width: 992px) {
+    .video {
+       display: none;
+    }
+    .fix-width {
+        width: 100%;
+    }
+}
+
 @media (min-width: 768px) {
     .dis-hide{
         display: none;
@@ -279,5 +308,19 @@ a {
     }
     .stats-wrapper {
         justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+  .gradient {
+    background:
+  radial-gradient(ellipse 60% 30% at top left, #387ed1 50%, transparent 41%),
+  radial-gradient(ellipse 60% 20% at bottom right, #387ed1 50%, transparent 41%);
+  }
+}
+
+@media (max-width: 1200px) {
+    .fix-top {
+        bottom : 0rem !important;
     }
 }
