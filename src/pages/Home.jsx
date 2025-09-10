@@ -66,13 +66,14 @@ export default function Home() {
         description="We help brands grow online with SEO, PPC, and social media marketing."
       />
       <div className="container-fluid gradient pt-5 p-lg-3 fix-top mb-5">
-        <div className="row p-lg-5 flex-wrap-reverse justify-content-between w-100 align-items-center">
+        <div className="row p-lg-5 justify-content-between w-100 align-items-center">
           <div
-            className="col-lg-6 p-xxl-5 text pb-5 text-center text-lg-start fix-top"
+            className="col-lg-6 p-xxl-5 text-center text-lg-start fix-top"
             style={{ position: "relative", bottom: "3rem" }}
           >
             <h1>
-              Partner with the Leading <br /> Branding & Digital Marketing
+              Partner with the Leading <br />
+              <span className="text"> Branding & Digital Marketing</span>
               <br />
               Company in Uttar Pradesh
             </h1>
@@ -88,7 +89,7 @@ export default function Home() {
             <img
               src="/hero1.png"
               alt="social"
-              className="img-fluid mb-5"
+              className="img-fluid float"
               width={600}
               height={300}
               fetchpriority="high"
@@ -187,15 +188,10 @@ export default function Home() {
       <div className={`container p-md-5 mt-5 mb-5 `}>
         <h2 className="mb-3 text-center">Your Growth Partner</h2>
         <div className="row align-items-center">
-          <div className="col-lg-6 p-md-5 text-muted text-center text-lg-start">
-            <img
-              className="social img-flui"
-              src="/progress.png"
-              alt="work"
-              width={300}
-              height={400}
-              fetchpriority="high"
-            />
+          <div className="col-lg-6 text-muted text-center text-lg-start">
+            <video autoPlay muted loop playsInline className="video">
+              <source src="/progress.mp4" type="video/mp4" />
+            </video>
           </div>
           <div className="col-lg-6 p-md-3 text-mute">
             <p>

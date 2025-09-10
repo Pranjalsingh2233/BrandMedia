@@ -56,10 +56,10 @@ a {
 
 .btn {
   background-color: #387ed1;
-  padding: 0.6rem 1.2rem;  
+  padding: 0.8rem 1.5rem;  
   color: #fff;
   border: none;
-  border-radius: 0.375rem; 
+  border-radius: 99999px; 
   font-weight: 500;        
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -204,6 +204,10 @@ a {
 
 }
 
+.float{
+    animation: float 3s ease-in-out infinite;
+}
+
 /* About */
 @property --val {
   syntax: '<percentage>';
@@ -246,18 +250,17 @@ a {
     height: 400px;
     width: 400px;
     object-fit: cover;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-.fix-width {
-    width: 70%;
 }
 
 @keyframes slide {
   from { transform: translateX(0); }
   to { transform: translateX(calc(-50% - 2rem)); }
+}
+
+@keyframes float {
+  0% { transform: translatey(0); }
+  50% { transform: translatey(-0.5rem); }
+  100% { transform: translatey(0); }
 }
 
 @keyframes progress {
@@ -276,20 +279,15 @@ a {
         width: 320px !important;
         height: 520px !important;
     }
+    .video {
+        height: 200px;
+        width: 200px;
+    }
 }
 
 @media (max-width: 421px) {
     .footer {
         gap: 1rem;
-    }
-}
-
-@media (max-width: 992px) {
-    .video {
-       display: none;
-    }
-    .fix-width {
-        width: 100%;
     }
 }
 

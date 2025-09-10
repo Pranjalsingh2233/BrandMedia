@@ -116,7 +116,7 @@ export default function () {
                     className="ms-md-5 btn mt-3 mt-md-0"
                     to="/contact"
                     onClick={handleClose}
-                    style={{ padding: "0.6rem 3rem", borderRadius: "2rem" }}
+                    style={{ padding: "0.6rem 3rem" }}
                   >
                     Get Started
                   </Link>

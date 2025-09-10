@@ -12,7 +12,7 @@ export default function About() {
         title="About Us"
         description="Learn more about YourBrand, a digital marketing company in India."
       />
-      <div className="container mb-5 p-md-3 pt-5 fix-top">
+      <div className="container p-md-3 pt-5 mt-5 mt-md-0 fix-top">
         <div className="row p-md-5  justify-content-between w-100 align-items-center">
           <div className="col-lg-6 mt-lg-5">
             <h1>
@@ -36,7 +36,7 @@ export default function About() {
             <img
               src="/hero.png"
               alt="team"
-              className="img-fluid"
+              className="img-fluid float"
               width={600}
               height={300}
               fetchpriority="high"
