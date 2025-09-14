@@ -19,7 +19,7 @@ export default function ReviewCard() {
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}
             >
-              <div className="mb-3">⭐⭐⭐⭐</div>
+              <div className="mb-3">⭐⭐⭐⭐⭐</div>
               <p>
                 "This was my first time running ads, and I was nervous about
                 wasting money - but Afridi made the entire process stress-free.
@@ -29,7 +29,7 @@ export default function ReviewCard() {
               </p>
               <div className="profile-wrapper mt-auto">
                 <div className="profile">S</div>
-                <div className="fs-4 mb-1">Shraddha Yadav</div>
+                <div className="fs-4 ">Shraddha Yadav</div>
               </div>
             </div>
             <div
@@ -54,7 +54,7 @@ export default function ReviewCard() {
                 >
                   W
                 </div>
-                <div className="fs-4 mb-1">Wonder Kids Pre-School</div>
+                <div className="fs-4 ">Wonder Kids</div>
               </div>{" "}
             </div>
             <div
@@ -73,7 +73,7 @@ export default function ReviewCard() {
               </p>
               <div className="profile-wrapper mt-auto">
                 <div className="profile">A</div>
-                <div className="fs-4 mb-1">Ahmed ALi</div>
+                <div className="fs-4 ">Ahmed ALi</div>
               </div>{" "}
             </div>
             <div
@@ -99,7 +99,7 @@ export default function ReviewCard() {
                 >
                   A
                 </div>
-                <div className="fs-4 mb-1">Amish Rao</div>
+                <div className="fs-4 ">Arjun Singh</div>
               </div>{" "}
             </div>
             {/* Duplicate review for smooth animation */}
@@ -108,7 +108,7 @@ export default function ReviewCard() {
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}
             >
-              <div className="mb-3">⭐⭐⭐⭐</div>
+              <div className="mb-3">⭐⭐⭐⭐⭐</div>
               <p>
                 "This was my first time running ads, and I was nervous about
                 wasting money - but Afridi made the entire process stress-free.
@@ -118,7 +118,7 @@ export default function ReviewCard() {
               </p>
               <div className="profile-wrapper mt-auto">
                 <div className="profile">S</div>
-                <div className="fs-4 mb-1">Shraddha Yadav</div>
+                <div className="fs-4 ">Shraddha Yadav</div>
               </div>{" "}
             </div>
             <div
@@ -143,7 +143,7 @@ export default function ReviewCard() {
                 >
                   W
                 </div>
-                <div className="fs-4 mb-1">Wonder Kids Pre-School</div>
+                <div className="fs-4 ">Wonder Kids</div>
               </div>{" "}
             </div>
             <div
@@ -162,7 +162,7 @@ export default function ReviewCard() {
               </p>
               <div className="profile-wrapper mt-auto">
                 <div className="profile">A</div>
-                <div className="fs-4 mb-1">Ahmed ALi</div>
+                <div className="fs-4 ">Ahmed ALi</div>
               </div>{" "}
             </div>
             <div
@@ -188,7 +188,7 @@ export default function ReviewCard() {
                 >
                   A
                 </div>
-                <div className="fs-4 mb-1">Amish Rao</div>
+                <div className="fs-4 ">Arjun Singh</div>
               </div>{" "}
             </div>
           </div>

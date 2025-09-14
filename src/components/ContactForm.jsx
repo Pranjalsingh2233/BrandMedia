@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./ContactForm.css";
+import axios from "axios";
 
 export default function ContactForm() {
   const [inputValue, setInputValue] = useState({
@@ -15,6 +16,30 @@ export default function ContactForm() {
       ...inputValue,
       [name]: value,
     });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const res = await axios.post(
+        "http://localhost:8080/send-email",
+        inputValue
+      );
+      alert(res.data);
+      setInputValue({
+        email: "",
+        name: "",
+        phone: "",
+        message: "",
+      });
+    } catch (err) {
+      console.log(err);
+      if (err.response && err.response.data) {
+        alert(err.response.data);
+      } else {
+        alert("Something went wrong. Please try again later.");
+      }
+    }
   };
 
   return (
@@ -72,7 +97,7 @@ export default function ContactForm() {
               message away — ready with strategies tailored to grow your
               business.
             </p>
-            <form onSubmit="">
+            <form onSubmit={handleSubmit}>
               <div>
                 <label htmlFor="name">Name</label>
                 <input

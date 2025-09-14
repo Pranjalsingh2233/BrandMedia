@@ -47,8 +47,9 @@ export default function TeamSection() {
               height={300}
               fetchpriority="high"
             ></img>
-            <div className="text-center fs-3 mt-2">
-              Afridi Khan <br /> <span className="fs-6">Founder/CEO</span>
+            <div className="row text-center fs-3 mt-2">
+              <span> Afridi Khan </span>
+              <span className="fs-6">Founder/CEO</span>
             </div>
           </div>
         </div>
