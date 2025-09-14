@@ -9,8 +9,8 @@ export default function About() {
   return (
     <>
       <Seo
-        title="About Us"
-        description="Learn more about YourBrand, a digital marketing company in India."
+        title="About BrandMedia"
+        description="We are a leading digital marketing company in Prayagraj, helping businesses across Uttar Pradesh grow online with SEO, PPC, and website design."
       />
       <div className="container p-md-3 pt-5 mt-5 mt-md-0 fix-top">
         <div className="row p-md-5  justify-content-between w-100 align-items-center">

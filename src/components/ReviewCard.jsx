@@ -73,7 +73,7 @@ export default function ReviewCard() {
               </p>
               <div className="profile-wrapper mt-auto">
                 <div className="profile">A</div>
-                <div className="fs-4 ">Ahmed ALi</div>
+                <div className="fs-4 ">Ahmed Ali</div>
               </div>{" "}
             </div>
             <div
@@ -162,7 +162,7 @@ export default function ReviewCard() {
               </p>
               <div className="profile-wrapper mt-auto">
                 <div className="profile">A</div>
-                <div className="fs-4 ">Ahmed ALi</div>
+                <div className="fs-4 ">Ahmed Ali</div>
               </div>{" "}
             </div>
             <div

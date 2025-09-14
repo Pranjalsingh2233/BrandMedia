@@ -7,9 +7,10 @@ export default function Contact() {
   return (
     <>
       <Seo
-        title="About Us"
-        description="Learn more about YourBrand, a digital marketing company in India."
+        title="Contact Us"
+        description="Get in touch with BrandMedia for SEO, PPC, social media marketing, and website design services. Contact us today to grow your business online."
       />
+
       <div className="fix-top">
         <ContactForm />
         <SeoSection />

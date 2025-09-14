@@ -7,9 +7,10 @@ export default function TeamSection() {
   return (
     <>
       <Seo
-        title="About Us"
-        description="Learn more about YourBrand, a digital marketing company in India."
+        title="Meet Our Team"
+        description="Get to know the talented team behind BrandMedia. Our SEO, PPC, social media, and web design experts help businesses grow online with proven strategies."
       />
+
       <div className="container p-md-3 mb-5 mb-md-0 fix-top">
         <div className="row p-md-5 pt-5">
           <div className="col-lg-8">

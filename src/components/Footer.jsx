@@ -17,21 +17,31 @@ function Footer() {
               practices to secure top search rankings and boost visibility.
             </p>
             <div className="d-flex">
-              <i
-                class="fa-brands fa-instagram profile mb-4 me-4"
-                style={{ height: "40px", width: "40px" }}
-              ></i>
-              <i
-                class="fa-brands fa-whatsapp profile me-4"
-                style={{ height: "40px", width: "40px" }}
-              ></i>
-              <i
-                class="fa-brands fa-square-linkedin profile"
-                style={{ height: "40px", width: "40px" }}
-              ></i>
+              <a href="" target="_blank" className="mb-4 me-3">
+                <i
+                  class="fa-brands fa-instagram profile"
+                  style={{ height: "40px", width: "40px" }}
+                ></i>
+              </a>
+              <a
+                href="https://wa.me/9452873121"
+                target="_blank"
+                className="me-3"
+              >
+                <i
+                  class="fa-brands fa-whatsapp profile "
+                  style={{ height: "40px", width: "40px" }}
+                ></i>
+              </a>
+              <a href="" target="_blank">
+                <i
+                  class="fa-brands fa-square-linkedin profile"
+                  style={{ height: "40px", width: "40px" }}
+                ></i>
+              </a>
             </div>
           </div>
-          <div className="col-md-4 mb-3">
+          <div className="col-md-4 mb-4">
             <p className="fs-4">Quick Links</p>
             <Link to="/about" className="text-muted">
               About
@@ -48,7 +58,6 @@ function Footer() {
             <Link to="/contact" className="text-muted ">
               Contact Us
             </Link>
-            <br />
           </div>
           <div className="col-md-4">
             {" "}

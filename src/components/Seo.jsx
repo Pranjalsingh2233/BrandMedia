@@ -16,7 +16,7 @@ function Seo({ title, description }) {
       />
       <meta
         name="keywords"
-        content="digital marketing, SEO, PPC, social media, India"
+        content="digital marketing, SEO, PPC, social media, India, Prayagraj, Uttar Pradesh, video editing, google ads, ads, local seo, "
       />
     </Helmet>
   );

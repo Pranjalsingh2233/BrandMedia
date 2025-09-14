@@ -62,8 +62,8 @@ export default function Home() {
   return (
     <>
       <Seo
-        title="Best Digital Marketing Company in India"
-        description="We help brands grow online with SEO, PPC, and social media marketing."
+        title="Best Digital Marketing Company in Prayagraj, Uttar Pradesh, India"
+        description="We help brands grow online with SEO, PPC, social media marketing, and custom website design to drive traffic, boost sales, and build your brand"
       />
       <div className="container-fluid gradient pt-5 p-lg-3 fix-top mb-5">
         <div className="row p-lg-5 justify-content-between w-100 align-items-center">
@@ -151,7 +151,7 @@ export default function Home() {
             <Card
               title="Social Media Marketing"
               para="We create and manage high-performing Facebook and Instagram ad campaigns that build brand awareness, generate quality leads, and boost sales conversions for your business."
-              icon="fa-solid fa-flag"
+              icon="fa-solid fa-bullhorn"
             />
           </div>
           <div className="col-xl-4 col-md-6">
@@ -167,7 +167,7 @@ export default function Home() {
             <Card
               title="Local SEO"
               para="Boost your local visibility with SEO that puts you at the top of Google search and Maps. Our strategies optimize your presence, attract more customers, and grow your business locally."
-              icon="fa-solid fa-ranking-star"
+              icon="fa-solid fa-map-location-dot"
             />
           </div>
           <div className="col-xl-4 col-md-6">
