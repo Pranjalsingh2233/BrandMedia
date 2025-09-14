@@ -17,7 +17,7 @@ export default function Team() {
             </div>
             <p>
               <b>Afridi Khan </b>
-              <br /> Founder & SEO
+              <br /> Founder & SMM
             </p>
           </div>
         </div>
@@ -34,7 +34,7 @@ export default function Team() {
             <p>
               <b> Pranjal Singh </b>
               <br />
-              Founder & Full-Stack Web Developer
+              Co-Founder & Full-Stack Web Developer
             </p>
           </div>
         </div>
@@ -51,7 +51,7 @@ export default function Team() {
             <p>
               <b> Virendra Tiwari </b>
               <br />
-              Gandu Gutka
+              Co-Founder & Google Ads
             </p>
           </div>
         </div>

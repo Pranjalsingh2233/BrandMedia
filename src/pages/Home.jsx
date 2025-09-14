@@ -149,38 +149,43 @@ export default function Home() {
           <div className="col-xl-4 col-md-6">
             {" "}
             <Card
-              title="Social Engine Marketing"
-              para="Strengthen your brand identity and connect with your audience through impactful social media. Our tailored campaigns spark engagement and grow your community."
+              title="Social Media Marketing"
+              para="We create and manage high-performing Facebook and Instagram ad campaigns that build brand awareness, generate quality leads, and boost sales conversions for your business."
               icon="fa-solid fa-flag"
             />
           </div>
           <div className="col-xl-4 col-md-6">
             <Card
               title="Website Design and Development"
-              para="Create a powerful first impression with a sleek, user-friendly website. Our expert design and development services ensure a seamless experience that drives results."
+              para="Create a strong online presence with a modern, user-friendly website. Our expert web design and development services help your business stand out and deliver a seamless experience to your customers
+."
               icon="fa-solid fa-code"
             />
           </div>
           <div className="col-xl-4 col-md-6">
             {" "}
             <Card
-              title="Social Media Optimization"
-              para="We create impactful content that informs, entertains, and inspires—keeping your audience engaged while strengthening brand loyalty."
+              title="Local SEO"
+              para="Boost your local visibility with SEO that puts you at the top of Google search and Maps. Our strategies optimize your presence, attract more customers, and grow your business locally."
               icon="fa-solid fa-ranking-star"
             />
           </div>
           <div className="col-xl-4 col-md-6">
             <Card
-              title="Paid Advertising (PPC)"
-              para="Maximize your reach with targeted paid ads on Google, Facebook, and beyond. We design data-driven campaigns that deliver clicks, leads, and conversions efficiently."
+              title="Google Advertising (PPC)"
+              para="Reach your audience with targeted Google Ads that drive traffic, leads, and ROI.
+From keywords to tracking, we manage campaigns that deliver measurable results."
               icon="fa-solid fa-money-bill-trend-up"
             />
           </div>
           <div className="col-xl-4 col-md-6">
             <Card
-              title="Performance Tracking"
-              para="We monitor and analyze your digital campaigns with advanced analytics, giving you clear insights to optimize performance and maximize ROI."
-              icon="fa-solid fa-chart-pie"
+              title="Video Editing"
+              para="Bring your ideas to life with expert video editing.
+We design engaging, brand-focused visuals that connect.
+From ads to social media and corporate films,
+our edits boost quality, impact, and reach."
+              icon="fa-solid fa-video"
             />
           </div>
         </div>

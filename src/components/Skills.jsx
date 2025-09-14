@@ -7,8 +7,8 @@ export default function Skills() {
   const content = [
     "Search Engine Optimization (SEO)",
     "Web Development",
-    "Paid Advertising (PPC)",
-    "Content Marketing",
+    "Social Media Marketing",
+    "Google Ads (PPC)",
   ];
 
   const { ref, inView } = useInView({

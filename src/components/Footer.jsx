@@ -72,7 +72,7 @@ function Footer() {
               </div>
               <div className="col-10">
                 <div>Phone Number</div>
-                <p>+91 902 684 0092</p>
+                <p>+91 945-287-3121</p>
               </div>
               <div className="col-2 mb-3">
                 <i
@@ -82,7 +82,7 @@ function Footer() {
               </div>
               <div className="col-10">
                 <div>Email Address</div>
-                <p>BrandMedia@gmail.com</p>
+                <p>brandmedia10112003@gmail.com</p>
               </div>
             </div>
           </div>

@@ -50,7 +50,7 @@ export default function ContactForm() {
             </div>
             <div className="col-10">
               <h5>Phone Number</h5>
-              <p>+91 902 684 0092</p>
+              <p>+91 945-287-3121</p>
             </div>
             <div className="col-2 mb-3">
               <i
@@ -60,7 +60,7 @@ export default function ContactForm() {
             </div>
             <div className="col-10">
               <h5>Email Address</h5>
-              <p>BrandMedia@gmail.com</p>
+              <p>brandmedia10112003@gmail.com</p>
             </div>
           </div>
         </div>
