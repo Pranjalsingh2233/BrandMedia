@@ -10,6 +10,7 @@ import Contact from "./pages/Contact";
 import Team from "./pages/TeamSection";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import { ToastContainer } from "react-toastify";
 
 function App() {
   const { pathname } = useLocation();
@@ -31,6 +32,7 @@ function App() {
           <Route path="/team" element={<Team />} />
         </Routes>
         <Footer />
+        <ToastContainer />
       </MyContext.Provider>
     </HelmetProvider>
   );

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./ContactForm.css";
 import axios from "axios";
+import { toast } from "react-toastify";
 
 export default function ContactForm() {
   const [inputValue, setInputValue] = useState({
@@ -22,10 +23,12 @@ export default function ContactForm() {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "http://localhost:8080/send-email",
+        "https://brandmedia-backend.onrender.com/send-email",
         inputValue
       );
-      alert(res.data);
+      toast(res.data, {
+        position: "top-right",
+      });
       setInputValue({
         email: "",
         name: "",
@@ -34,11 +37,10 @@ export default function ContactForm() {
       });
     } catch (err) {
       console.log(err);
-      if (err.response && err.response.data) {
-        alert(err.response.data);
-      } else {
-        alert("Something went wrong. Please try again later.");
-      }
+      toast.error(
+        err.response?.data || "Something went wrong. Please try again.",
+        { position: "top-right" }
+      );
     }
   };
 
