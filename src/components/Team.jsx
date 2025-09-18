@@ -9,7 +9,7 @@ export default function Team() {
           <div>
             <div className="d-flex justify-content-center mb-4">
               <img
-                src="/social.jpg"
+                src="/Afridimain.jpg"
                 alt="team"
                 className=" profile"
                 style={{ width: "12rem", height: "12rem" }}
@@ -25,7 +25,7 @@ export default function Team() {
           <div>
             <div className="d-flex justify-content-center mb-4">
               <img
-                src="/social.jpg"
+                src="/Pranjal.jpg"
                 alt="team"
                 className=" profile"
                 style={{ width: "12rem", height: "12rem" }}
@@ -59,7 +59,7 @@ export default function Team() {
           <div>
             <div className="d-flex justify-content-center mb-4">
               <img
-                src="/social.jpg"
+                src="/zishan.jpg"
                 alt="team"
                 className=" profile"
                 style={{ width: "12rem", height: "12rem" }}

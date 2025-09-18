@@ -41,7 +41,7 @@ export default function TeamSection() {
           </div>
           <div className="col-lg-4 ">
             <img
-              src="/raamin-ka-uR51HXLO7G0-unsplash.jpg"
+              src="/afridi.jpg"
               alt="owner"
               className="img-fluid social"
               width={600}
