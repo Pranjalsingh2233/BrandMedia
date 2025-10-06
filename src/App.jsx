@@ -11,6 +11,7 @@ import Team from "./pages/TeamSection";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import { ToastContainer } from "react-toastify";
+import Whatsapp from "./components/Whatsapp";
 
 function App() {
   const { pathname } = useLocation();
@@ -31,6 +32,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/team" element={<Team />} />
         </Routes>
+        <Whatsapp />
         <Footer />
         <ToastContainer />
       </MyContext.Provider>
