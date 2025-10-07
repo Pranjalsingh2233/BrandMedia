@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 export default function Whatsapp() {
-  window.addEventListener("load", () => {
-    const whatsapp = document.querySelector(".whatsapp");
-    setTimeout(() => {
-      whatsapp.classList.add("show");
-    }, 800);
-  });
+  useEffect(() => {
+    window.addEventListener("load", () => {
+      const whatsapp = document.querySelector(".whatsapp");
+      setTimeout(() => {
+        whatsapp.classList.add("show");
+      }, 800);
+    });
+  }, []);
 
   return (
     <div className="whatsapp">
