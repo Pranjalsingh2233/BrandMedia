@@ -25,7 +25,7 @@ export default function Team() {
           <div>
             <div className="d-flex justify-content-center mb-4">
               <img
-                src="/Pranjal.jpg"
+                src="/pranjal.png"
                 alt="team"
                 className=" profile"
                 style={{ width: "12rem", height: "12rem" }}

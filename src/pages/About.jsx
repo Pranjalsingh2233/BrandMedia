@@ -32,7 +32,10 @@ export default function About() {
               growth, and business opportunities to our clients.
             </p>
           </div>
-          <div className="col-lg-6 text-center text-lg-start p-5">
+          <div
+            className="col-lg-6 text-center text-lg-start p-5"
+            style={{ aspectRatio: "16 / 9" }}
+          >
             <img
               src="/hero.png"
               alt="team"

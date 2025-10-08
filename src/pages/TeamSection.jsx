@@ -39,7 +39,7 @@ export default function TeamSection() {
               promise — it’s a practice.
             </p>
           </div>
-          <div className="col-lg-4 ">
+          <div className="col-lg-4 " style={{ aspectRatio: "16 / 9" }}>
             <img
               src="/afridi.jpg"
               alt="owner"

@@ -85,7 +85,10 @@ export default function Home() {
               Start Ranking Now
             </Link>
           </div>
-          <div className="col-lg-6 col-xxl-auto text-center text-lg-start">
+          <div
+            className="col-lg-6 col-xxl-auto text-center text-lg-start"
+            style={{ aspectRatio: "16 / 9" }}
+          >
             <img
               src="/hero1.png"
               alt="social"

@@ -2,12 +2,12 @@ import React, { useEffect } from "react";
 
 export default function Whatsapp() {
   useEffect(() => {
-    window.addEventListener("load", () => {
-      const whatsapp = document.querySelector(".whatsapp");
+    const whatsapp = document.querySelector(".whatsapp");
+    if (whatsapp) {
       setTimeout(() => {
         whatsapp.classList.add("show");
       }, 800);
-    });
+    }
   }, []);
 
   return (
