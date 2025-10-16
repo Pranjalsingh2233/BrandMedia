@@ -42,7 +42,7 @@ export default function Team() {
           <div>
             <div className="d-flex justify-content-center mb-4">
               <img
-                src="/forest-simon-ZKbve9f7Mp4-unsplash.jpg"
+                src="/viru.jpg"
                 alt="team"
                 className=" profile"
                 style={{ width: "12rem", height: "12rem" }}
