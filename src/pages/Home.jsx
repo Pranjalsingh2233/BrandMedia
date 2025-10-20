@@ -227,6 +227,155 @@ our edits boost quality, impact, and reach."
           </div>
         </div>
       </div>
+
+      <div className="container p-md-3 mb-5 display-hide">
+        <div className="choose-content">
+          <h2 className="choose-us">
+            Why <br />
+            Choose Us?
+          </h2>
+          <p>
+            We blend creativity, strategy, and technology to help brands grow
+            faster and perform better in the digital space.
+          </p>
+          <div className="choose-icon">
+            <i className="fa-solid fa-thumbs-up"></i>
+          </div>
+          <div className="choose-icon" style={{ top: "137.5px", right: "-9%" }}>
+            <i className="fa-solid fa-thumbs-up"></i>
+          </div>
+          <div className="choose-icon" style={{ top: "263.5px", right: "-8%" }}>
+            <i className="fa-solid fa-thumbs-up"></i>
+          </div>
+          <div className="choose-icon" style={{ top: "387.5px", right: "9%" }}>
+            <i className="fa-solid fa-thumbs-up"></i>
+          </div>
+          <div className="choose-text">
+            <svg
+              width="80"
+              height="40"
+              viewBox="0 0 80 40"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 20 Q40 0 80 20"
+                stroke="#387ed1"
+                stroke-width="3"
+                fill="transparent"
+              />
+              <polyline
+                points="70,10 80,20 70,30"
+                fill="none"
+                stroke="#387ed1"
+                stroke-width="3"
+              />
+            </svg>
+          </div>
+          <div
+            className="choose-text"
+            style={{ width: "300px", right: "-90%" }}
+          >
+            <h4>Result-Driven Strategies</h4>
+            <p>Data-backed campaigns focused on real ROI and brand growth.</p>
+          </div>
+          <div
+            className="choose-text"
+            style={{ top: "137.5px", right: "-30%" }}
+          >
+            <svg
+              width="80"
+              height="40"
+              viewBox="0 0 80 40"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 20 Q40 0 80 20"
+                stroke="#387ed1"
+                stroke-width="3"
+                fill="transparent"
+              />
+              <polyline
+                points="70,10 80,20 70,30"
+                fill="none"
+                stroke="#387ed1"
+                stroke-width="3"
+              />
+            </svg>
+          </div>
+          <div
+            className="choose-text"
+            style={{ top: "137.5px", width: "300px", right: "-100%" }}
+          >
+            <h4>Creative Experts</h4>
+            <p>
+              A team that blends innovation with proven marketing experience.
+            </p>
+          </div>
+          <div
+            className="choose-text"
+            style={{ top: "263.5px", right: "-30%" }}
+          >
+            <svg
+              width="80"
+              height="40"
+              viewBox="0 0 80 40"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 20 Q40 0 80 20"
+                stroke="#387ed1"
+                stroke-width="3"
+                fill="transparent"
+              />
+              <polyline
+                points="70,10 80,20 70,30"
+                fill="none"
+                stroke="#387ed1"
+                stroke-width="3"
+              />
+            </svg>
+          </div>
+          <div
+            className="choose-text"
+            style={{ top: "263.5px", width: "300px", right: "-100%" }}
+          >
+            <h4>Complete Solutions</h4>
+            <p>From web design to ads and SEO — all under one roof. </p>
+          </div>
+          <div
+            className="choose-text"
+            style={{ top: "387.5px", right: "-15%" }}
+          >
+            <svg
+              width="80"
+              height="40"
+              viewBox="0 0 80 40"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 20 Q40 0 80 20"
+                stroke="#387ed1"
+                stroke-width="3"
+                fill="transparent"
+              />
+              <polyline
+                points="70,10 80,20 70,30"
+                fill="none"
+                stroke="#387ed1"
+                stroke-width="3"
+              />
+            </svg>
+          </div>
+          <div
+            className="choose-text"
+            style={{ top: "387.5px", width: "300px", right: "-90%" }}
+          >
+            <h4>Complete Solutions</h4>
+            <p>From web design to ads and SEO — all under one roof. </p>
+          </div>
+        </div>
+      </div>
+
       <ReviewCard />
       <h2 className="text-center mb-5">Get In Touch With Us Today</h2>
       <ContactForm />
