@@ -65,7 +65,7 @@ export default function Home() {
         title="Best Digital Marketing Company in Prayagraj, Uttar Pradesh, India"
         description="We help brands grow online with SEO, PPC, social media marketing, and custom website design to drive traffic, boost sales, and build your brand"
       />
-      <div className="container-fluid gradient pt-5 p-lg-3 fix-top mb-5">
+      <div className="container-fluid gradient pt-5 p-lg-3 fix-top mb-5  d-flex">
         <div className="row p-lg-5 justify-content-between w-100 align-items-center">
           <div
             className="col-lg-6 p-xxl-5 text-center text-lg-start fix-top"
@@ -239,16 +239,16 @@ our edits boost quality, impact, and reach."
             faster and perform better in the digital space.
           </p>
           <div className="choose-icon">
-            <i className="fa-solid fa-thumbs-up"></i>
+            <i className="fa-solid fa-rocket"></i>
           </div>
           <div className="choose-icon" style={{ top: "137.5px", right: "-9%" }}>
-            <i className="fa-solid fa-thumbs-up"></i>
+            <i className="fa-solid fa-lightbulb"></i>
           </div>
           <div className="choose-icon" style={{ top: "263.5px", right: "-8%" }}>
-            <i className="fa-solid fa-thumbs-up"></i>
+            <i className="fa-solid fa-gear"></i>
           </div>
           <div className="choose-icon" style={{ top: "387.5px", right: "9%" }}>
-            <i className="fa-solid fa-thumbs-up"></i>
+            <i class="fa-solid fa-heart"></i>
           </div>
           <div className="choose-text">
             <svg
@@ -370,8 +370,8 @@ our edits boost quality, impact, and reach."
             className="choose-text"
             style={{ top: "387.5px", width: "300px", right: "-90%" }}
           >
-            <h4>Complete Solutions</h4>
-            <p>From web design to ads and SEO — all under one roof. </p>
+            <h4>Client First</h4>
+            <p>Transparent, responsive, and fully aligned with your goals. </p>
           </div>
         </div>
       </div>
