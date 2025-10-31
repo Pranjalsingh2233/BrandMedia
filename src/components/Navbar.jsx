@@ -131,7 +131,7 @@ export default function () {
                       ></i>
                     </a>
                     <a
-                      href="https://wa.me/9452873121"
+                      href="https://wa.me/919452873121"
                       target="_blank"
                       className=" me-4"
                     >
